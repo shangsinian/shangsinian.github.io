@@ -1,0 +1,32 @@
+# Dependencies
+markdown:         redcarpet
+highlighter:      pygments
+
+#
+encoding:         "utf-8"
+# Permalinks
+permalink:        pretty
+
+# Site settings
+title: shangsinian
+tagline:   'Time is limited, To be a better man'
+description:      'Hello,World! Here is my personal weblog about technology and life.'
+
+author:
+  name:           'ShangSinian'
+  url:            https://github.com/shangsinian
+
+paginate:         5
+
+# Custom vars
+version:          1.0.0
+
+twitter_username: jekyllrb
+github_username:  shangsinian
+
+
+# duoshuo
+comments :
+    provider : shangsinian
+    duoshuo :
+      short_name : shangsinian
