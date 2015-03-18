@@ -1,0 +1,36 @@
+---
+
+layout: post
+
+author: shang
+
+title: 浏览器获取本地json文件
+
+category: 
+
+tag: []
+
+---
+
+```javascript
+var LANG_MAP={};
+$(function(){
+    LANG_MAP=JSON.parse($("#map").html())
+    $("#map").remove();
+    console.log(LANG_MAP)
+})
+```
+
+```html
+<script type="text/html" id="map">
+    <%-JSON.stringify(lang_map)%>
+</script>
+```
+
+```javascript
+exports.index = function (req, res) {
+    res.render("usermanage",{
+        lang_map:config.langMap
+    });
+};
+```
